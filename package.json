@@ -1,0 +1,11 @@
+{
+  "name": "sampletsx",
+  "version": "1.0.0",
+  "description": "sample tsx",
+  "main": "index.js",
+  "scripts": {
+    "debug": "tsc --sourcemap"
+  },
+  "author": "",
+  "license": "ISC"
+}
