@@ -11,6 +11,8 @@ assignees: ''
 ## Description
 A clear and concise description of the issue we're tackling.
 
+## Branches
+
 ## Requires
 
 ## Potential solutions
