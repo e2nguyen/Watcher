@@ -1,5 +1,10 @@
+import Button from "components/button/button"
+
 function Playground() {
-  return <div>Welcome to Next.js!</div>;
+  return ( <>
+    <Button onClick={() => console.log("you clicked me")}> 
+    this is primary button </Button>
+  </> )
 }
 
 export default Playground;
