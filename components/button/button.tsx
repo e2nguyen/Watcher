@@ -1,22 +1,38 @@
-import CSS from "csstype";
 import React, { Children } from "react";
-import divStyle from "components/button/button.styles";
-import { css } from "@emotion/react";
 
 interface ButtonProperties {
   children: React.ReactNode;
+  backgroundURL: string;
   onClick: () => void;
 }
 
-const Button: React.FC<ButtonProperties> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProperties> = ({ 
+  children, 
+  backgroundURL, 
+  onClick 
+}) => {
   return (
-    <div css={ divStyle }>
+    <div className="container">
       <button 
         className="firstbutton-check" 
         onClick={onClick}
       > 
         {children}
       </button>
+      <style jsx>{`
+        .container {
+          margin: 50px;
+        }
+        .firstbutton-check {
+          // background-color: pink;
+          font-size: 30px;
+          // font-weight: 400;
+          line-height: 2;
+          color: #333;
+          font-family: "Lucida Console", "Courier New", monospace;
+          background-image: url(${backgroundURL});
+        }
+      `}</style>
     </div>
   );
 };
