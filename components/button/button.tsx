@@ -20,16 +20,11 @@ const Button: React.FC<ButtonProperties> = ({
         {children}
       </button>
       <style jsx>{`
-        .container {
-          margin: 50px;
-        }
         .firstbutton-check {
-          // background-color: pink;
-          font-size: 30px;
-          // font-weight: 400;
-          line-height: 2;
-          color: #333;
-          font-family: "Lucida Console", "Courier New", monospace;
+          height: 200px;
+          width: 200px;
+          border: none;
+          background-color: transparent;
           background-image: url(${backgroundURL});
         }
       `}</style>
