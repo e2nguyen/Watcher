@@ -1,30 +1,20 @@
-import CustomImageComponent from 'components/CustomImageComponent';
+import Button from "components/button/button"
 
-function ComponentsPlayground() {
-  return(
-    <>
-      <style jsx>
-        {`
-          h1 {
-            text-align: center;
-          }
-        `}
-      </style>
-      <div>
-        <h1>PLAYGROUND</h1>
-        <div className="custom-image-component-playground-container">
-          <h3>Custom Image Component</h3>
-          <CustomImageComponent
-            alt="sprites"
-            className="custom-image-component-example"
-            height="450"
-            src="/character-sprites-sample.png"
-            width="750"
-          />
-        </div>  
-      </div>
-    </>
-  );
-};
+function Playground() {
+  return ( <>
+    <Button onClick={() => console.log("you clicked the cat!")}
+    backgroundURL = "/cat.png"
+    height = "200px"
+    width = "200px"
+    > 
+     </Button>
+    <Button onClick={() => console.log("you clicked me")}
+    backgroundURL = "/girl-pink.png"
+    height = "200px"
+    width = "200px"
+    > 
+      </Button>
+  </> )
+}
 
-export default ComponentsPlayground;
+export default Playground;
