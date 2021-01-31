@@ -19,7 +19,9 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "types": ["@emotion/core"],
+    // "jsxImportSource": "@emotion/react"
   },
   "include": [
     "next-env.d.ts",
@@ -28,5 +30,9 @@
   ],
   "exclude": [
     "node_modules"
+  ],
+  "types": [
+    "node", 
+    "react-emotion"
   ]
 }
