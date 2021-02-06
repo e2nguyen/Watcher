@@ -34,5 +34,4 @@ CustomImageComponent.defaultProps = {
   layout: "fixed"
 };
 
-
 export default CustomImageComponent;
