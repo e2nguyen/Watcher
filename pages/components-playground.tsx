@@ -1,4 +1,5 @@
-import Button from "components/button/Button"
+import Button from "components/button/button"
+import Headline from "components/Headline"
 
 function Playground() {
   return (
@@ -14,7 +15,10 @@ function Playground() {
         backgroundURL = "/girl-pink.png"
         height = "200px"
         width = "200px"
-      /> 
+      />
+      <Headline>
+        This is a Headline 
+      </Headline>
     </>
   );
 }
