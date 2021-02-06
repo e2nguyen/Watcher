@@ -1,14 +1,14 @@
 import React from "react";
 
-interface ButtonProperties {
+interface Props {
   backgroundURL: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   height: string;
   onClick: () => void;
   width: string;
 }
 
-const Button: React.FC<ButtonProperties> = ({ 
+const Button: React.FC<Props> = ({ 
   backgroundURL, 
   children, 
   height,
