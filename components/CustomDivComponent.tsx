@@ -16,9 +16,8 @@ const CustomDivComponent: React.FC<Props> = ({
   header,
   height,
   width
-}) => {
-  return (
-    <>
+}) => (
+  <>
     <div className = {className}>
         <h1>{header}</h1>
       <div className = "body">{children}</div>
@@ -29,9 +28,8 @@ const CustomDivComponent: React.FC<Props> = ({
           height: ${height};
           width: ${width}
         }
-      `}</style>
-    </>
-  )
-};
+    `}</style>
+  </>
+);
 
 export default CustomDivComponent;
