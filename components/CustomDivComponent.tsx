@@ -35,21 +35,3 @@ const CustomDivComponent: React.FC<Props> = ({
 };
 
 export default CustomDivComponent;
-  
-
-
-{
-/* 
-const wrapper = () =>  {
-	const [update] = useMutation()
-
-onhover(
-  update(+1);
-)
-
-<div className=”wrapper”>
-   		{children}
-</div>
-}
-*/
-}
