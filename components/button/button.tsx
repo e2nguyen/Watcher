@@ -14,26 +14,24 @@ const Button: React.FC<Props> = ({
   height,
   onClick, 
   width
-}) => {
-  return (
-    <div className="custom-button-container">
-      <button 
-        className="custom-button" 
-        onClick={onClick}
-      > 
-        {children}
-      </button>
-      <style jsx>{`
-        .custom-button {
-          background-color: transparent;
-          background-image: url(${backgroundURL});
-          border: none;
-          height: ${height};
-          width: ${width}
-        }
-      `}</style>
-    </div>
-  );
-};
+}) => (
+  <div className="custom-button-container">
+    <button 
+      className="custom-button" 
+      onClick={onClick}
+    > 
+      {children}
+    </button>
+    <style jsx>{`
+      .custom-button {
+        background-color: transparent;
+        background-image: url(${backgroundURL});
+        border: none;
+        height: ${height};
+        width: ${width}
+      }
+    `}</style>
+  </div>
+);
 
 export default Button;
