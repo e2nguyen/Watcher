@@ -1,5 +1,4 @@
 import React from 'react';
-import Headline from "components/Headline"
 import CustomImageComponent from "components/CustomImageComponent";
 
 interface Props {
@@ -26,7 +25,7 @@ const AvatarComponent: React.FC<Props> = ({
   imageClassName,
   src,
 }) => (
-  <div className={`flex-container ${className}`}>
+  <div className={`${className}`}>
     <CustomImageComponent 
       alt={alt}
       className={imageClassName}

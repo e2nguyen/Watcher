@@ -1,6 +1,6 @@
 import Button from "components/button/button"
-import CustomDivComponent from "components/CustomDivComponent"
 import AvatarComponent from "components/AvatarComponent"
+import CustomDivComponent from "components/CustomDivComponent"
 
 function MainExperience() {
   return ( <>
