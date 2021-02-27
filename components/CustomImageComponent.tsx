@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 interface Props {
   alt: string;
+  children: React.ReactNode;
   className: string;
   height: string;
   layout?: "fixed" | "intrinsic" | "responsive";
@@ -12,6 +13,7 @@ interface Props {
 
 const CustomImageComponent: React.FC<Props> = ({
   alt,
+  children,
   className,
   height,
   layout,
@@ -27,6 +29,7 @@ const CustomImageComponent: React.FC<Props> = ({
       src={src}
       width={width}
     />
+    {children}
   </>
 );
 
