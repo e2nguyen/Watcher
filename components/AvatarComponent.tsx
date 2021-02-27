@@ -38,7 +38,6 @@ const AvatarComponent: React.FC<Props> = ({
     {children}
     <style jsx global>{`
       .${className} {
-        color: pink;
         height: 60px;
         vertical-align: middle;
         display: flex;
