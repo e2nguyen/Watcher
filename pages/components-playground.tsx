@@ -14,10 +14,8 @@ function Playground() {
       <Headline>
         This is a Headline for da playground
       </Headline>
-      <ShareButton
-      ></ShareButton>
-      <BookmarkButton
-      ></BookmarkButton>
+      <ShareButton/>
+      <BookmarkButton/>
       <Button 
         backgroundURL="/cat.png"
         backgroundSize="200px"
