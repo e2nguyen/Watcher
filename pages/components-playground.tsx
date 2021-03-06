@@ -1,7 +1,9 @@
 import {
+  BookmarkButton,
   Button,
   CommentButton,
-  LikeButton
+  LikeButton,
+  ShareButton
 } from "components/button";
 import Headline from "components/Headline"
 import CustomImageComponent from "components/CustomImageComponent"
@@ -9,6 +11,18 @@ import CustomImageComponent from "components/CustomImageComponent"
 function Playground() {
   return (
     <>
+      <Headline>
+        This is a Headline for da playground
+      </Headline>
+      <ShareButton/>
+      <BookmarkButton/>
+      <Button 
+        backgroundURL="/cat.png"
+        backgroundSize="200px"
+        onClick={() => alert("meow!")}
+        height="200px"
+        width="200px"
+      /> 
       <Button 
         onClick={() => console.log("you clicked the cat!")}
         backgroundSize="200px"
@@ -23,9 +37,6 @@ function Playground() {
         height="200px"
         width="200px"
       />
-      <Headline>
-        This is a Headline 
-      </Headline>
       <CustomImageComponent
         alt="bleh"
         className="meh"
