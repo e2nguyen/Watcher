@@ -1,6 +1,7 @@
 import React from "react";
 
 interface Props {
+  backgroundSize: string;
   backgroundURL: string;
   children?: React.ReactNode;
   height: string;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const Button: React.FC<Props> = ({ 
+  backgroundSize,
   backgroundURL, 
   children, 
   height,
@@ -26,9 +28,10 @@ const Button: React.FC<Props> = ({
       .custom-button {
         background-color: transparent;
         background-image: url(${backgroundURL});
+        background-size: ${backgroundSize};
         border: none;
         height: ${height};
-        width: ${width}
+        width: ${width};
       }
     `}</style>
   </div>
