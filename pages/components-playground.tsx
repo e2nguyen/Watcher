@@ -1,5 +1,9 @@
+import {
+  Button,
+  CommentButton,
+  LikeButton
+} from "components/button";
 import Headline from "components/Headline"
-import { Button, LikeButton } from "components/button";
 import CustomImageComponent from "components/CustomImageComponent"
 
 function Playground() {
@@ -30,6 +34,7 @@ function Playground() {
         width="320px"
       />
       <LikeButton/>
+      <CommentButton/>
     </>
   );
 }
