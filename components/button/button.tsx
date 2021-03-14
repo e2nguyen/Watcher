@@ -17,7 +17,7 @@ const Button: React.FC<Props> = ({
   onClick, 
   width
 }) => (
-  <div className="custom-button-container">
+  <span className="custom-button-container">
     <button 
       className="custom-button" 
       onClick={onClick}
@@ -34,7 +34,7 @@ const Button: React.FC<Props> = ({
         width: ${width};
       }
     `}</style>
-  </div>
+  </span>
 );
 
 export default Button;

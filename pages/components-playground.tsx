@@ -7,6 +7,7 @@ import {
 } from "components/button";
 import Headline from "components/Headline"
 import CustomImageComponent from "components/CustomImageComponent"
+import SocialMediaButtonsContainer from "components/SocialMediaButtonsContainer"
 
 function Playground() {
   return (
@@ -14,8 +15,7 @@ function Playground() {
       <Headline>
         This is a Headline for da playground
       </Headline>
-      <ShareButton/>
-      <BookmarkButton/>
+      <SocialMediaButtonsContainer/>
       <Button 
         backgroundURL="/cat.png"
         backgroundSize="200px"
