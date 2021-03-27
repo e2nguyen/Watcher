@@ -8,35 +8,23 @@ import {
 import Headline from "components/Headline"
 import CustomImageComponent from "components/CustomImageComponent"
 import SocialMediaButtonsContainer from "components/SocialMediaButtonsContainer"
+import RedditPost from "components/social-media-posts/RedditPostComponent"
 
 function Playground() {
   return (
     <>
-      <Headline>
-        This is a Headline for da playground
-      </Headline>
-      <SocialMediaButtonsContainer/>
-      <Button 
-        backgroundURL="/cat.png"
-        backgroundSize="200px"
-        onClick={() => alert("meow!")}
-        height="200px"
-        width="200px"
-      /> 
-      <Button 
-        onClick={() => console.log("you clicked the cat!")}
-        backgroundSize="200px"
-        backgroundURL = "/cat.png"
-        height="200px"
-        width="200px"
-      /> 
-      <Button 
-        onClick={() => console.log("you clicked me")}
-        backgroundSize="200px"
-        backgroundURL="/girl-pink.png"
-        height="200px"
-        width="200px"
-      />
+      {/* TO DO: Alphabetize */}
+      <RedditPost
+        className="first-reddit-post-here"
+        avatarAlt="pink girl profile pic"
+        avatarChildren="kawaii_with_cat"
+        avatarSrc="/girl-pink.png"
+      >
+      <p>50 points * 11 comments</p>
+      </RedditPost>
+      <br></br>
+      <br></br>
+
       <CustomImageComponent
         alt="bleh"
         className="meh"
@@ -44,8 +32,6 @@ function Playground() {
         src="/character-sprites-sample.png"
         width="320px"
       />
-      <LikeButton/>
-      <CommentButton/>
     </>
   );
 }
