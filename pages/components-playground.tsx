@@ -8,6 +8,7 @@ import {
 import Headline from "components/Headline"
 import CustomImageComponent from "components/CustomImageComponent"
 import SocialMediaButtonsContainer from "components/SocialMediaButtonsContainer"
+import FaceBookPost from "components/social-media-posts/FaceBookPost";
 
 function Playground() {
   return (
@@ -46,6 +47,17 @@ function Playground() {
       />
       <LikeButton/>
       <CommentButton/>
+      <FaceBookPost
+      >
+       <p> This is a facebook type post >:)</p>
+      </FaceBookPost>
+      <CustomImageComponent
+        alt="bleh"
+        className="meh"
+        height="200px"
+        src="/character-sprites-sample.png"
+        width="320px"
+      />
     </>
   );
 }
