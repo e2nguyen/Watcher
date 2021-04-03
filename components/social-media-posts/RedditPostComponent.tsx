@@ -2,6 +2,7 @@ import React from 'react'
 import SocialMediaButtonsContainer from 'components/SocialMediaButtonsContainer'
 import Headline from "components/Headline"
 import AvatarComponent from "components/AvatarComponent"
+import { jsx } from '@emotion/react'
 
 interface Props {
   avatarAlt: string;
@@ -11,26 +12,13 @@ interface Props {
   className: string;
 }
   
-const RedditPostStyling: React.FC<{className: string}> = ({className}) => (
-  <style jsx global>{`
-    .${className} {
-      background-color: pink;
-      border: solid;
-      height: auto;
-      padding-bottom: 20px;
-      padding-left: 10px;
-      width: 500px;
-    }
-  `}</style>
-)
-
-const RedditPost: React.FC<Props> = ({
+const RedditPost = ({
   avatarAlt,
   avatarChildren,
   avatarSrc,
   className,
   children,
-}) => (
+}: Props): JSX.Element=> (
   <>
     <div className={`${className}`}>
       <AvatarComponent
@@ -51,7 +39,6 @@ const RedditPost: React.FC<Props> = ({
       {children}
       <SocialMediaButtonsContainer/>
     </div>
-    <RedditPostStyling className={className}></RedditPostStyling>
   </>
 );
 
