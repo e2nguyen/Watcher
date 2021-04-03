@@ -2,32 +2,22 @@ import React from 'react'
 import SocialMediaButtonsContainer from 'components/SocialMediaButtonsContainer'
 import Headline from "components/Headline"
 import AvatarComponent from "components/AvatarComponent"
-import { jsx } from '@emotion/react'
 
 interface Props {
-  avatarAlt: string;
-  avatarChildren: string;
-  avatarSrc: string;
   children: React.ReactNode;
-  className: string;
 }
   
-const RedditPost = ({
-  avatarAlt,
-  avatarChildren,
-  avatarSrc,
-  className,
-  children,
-}: Props): JSX.Element=> (
-  <>
-    <div className={`${className}`}>
+const RedditPost = ({ children }: Props): JSX.Element=> {
+  return (
+    <div className="reddit-post">
       <AvatarComponent
-        alt={avatarAlt}
-        children={avatarChildren}
+        alt="alt text for girl pin avatar"
         className="this-reddit-post-avatar-image"
         imageClassName="this-avatar-class"
-        src={avatarSrc}
-      />
+        src="/girl-pink.png"
+      >
+        <p>fdsfjas</p>
+      </AvatarComponent>
       <Headline>
         yo check out my cat /r/cats
         fdsalfkkalfdksfl;dsf;lmskdf;
@@ -39,8 +29,8 @@ const RedditPost = ({
       {children}
       <SocialMediaButtonsContainer/>
     </div>
-  </>
-);
+  ); 
+}
 
 export default RedditPost;
 
