@@ -6,27 +6,22 @@ import {
   ShareButton
 } from "components/button";
 import Headline from "components/Headline"
-import CustomImageComponent from "components/CustomImageComponent"
-import SocialMediaButtonsContainer from "components/SocialMediaButtonsContainer"
+import CustomImage from "components/CustomImage";
+import SocialMediaButtonsContainer from "components/SocialMediaButtonsContainer";
 import FaceBookPost from "components/social-media-posts/FaceBookPost";
-import RedditPost from "components/social-media-posts/RedditPostComponent"
+import RedditPost from "components/social-media-posts/RedditPost";
 
 function Playground() {
   return (
     <>
       {/* TO DO: Alphabetize */}
-      <RedditPost
-        className="first-reddit-post-here"
-        avatarAlt="pink girl profile pic"
-        avatarChildren="kawaii_with_cat"
-        avatarSrc="/girl-pink.png"
-      >
-      <p>50 points * 11 comments</p>
+      <RedditPost>
+        <p>50 points * 11 comments</p>
       </RedditPost>
       <br></br>
       <br></br>
 
-      <CustomImageComponent
+      <CustomImage
         alt="bleh"
         className="meh"
         height="200px"
@@ -39,7 +34,7 @@ function Playground() {
       >
        <p> This is a facebook type post >:)</p>
       </FaceBookPost>
-      <CustomImageComponent
+      <CustomImage
         alt="bleh"
         className="meh"
         height="200px"

@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialMediaButtonsContainer from 'components/SocialMediaButtonsContainer'
 import Headline from "components/Headline"
-import AvatarComponent from "components/AvatarComponent"
+import Avatar from "components/Avatar"
 
 interface Props {
   children: React.ReactNode;
@@ -10,14 +10,14 @@ interface Props {
 const RedditPost = ({ children }: Props): JSX.Element=> {
   return (
     <div className="reddit-post">
-      <AvatarComponent
+      <Avatar
         alt="alt text for girl pin avatar"
         className="this-reddit-post-avatar-image"
         imageClassName="this-avatar-class"
         src="/girl-pink.png"
       >
         <p>fdsfjas</p>
-      </AvatarComponent>
+      </Avatar>
       <Headline>
         yo check out my cat /r/cats
         fdsalfkkalfdksfl;dsf;lmskdf;

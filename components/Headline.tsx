@@ -4,10 +4,9 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Headline: React.FC<Props> = ({
-  children
-}) => (
-  <div className='headline'>
+const Headline = ({ children }: Props): JSX.Element => {
+  return (
+  <div className="headline">
     {children}
     <style jsx>{`
       .headline {
@@ -16,6 +15,7 @@ const Headline: React.FC<Props> = ({
     `}  
     </style>
   </div>
-);
+  );
+}
 
 export default Headline;

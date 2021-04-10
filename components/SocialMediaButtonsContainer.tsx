@@ -6,7 +6,8 @@ import {
     ShareButton
   } from './button';
   
-const SocialMediaButtonsContainer: React.FC = () => (
+const SocialMediaButtonsContainer = (): JSX.Element => {
+  return (
   <>
     <div className="social-media-buttons-container">
       <CommentButton/>
@@ -20,6 +21,7 @@ const SocialMediaButtonsContainer: React.FC = () => (
       }
     `}</style>
   </>
-);
+  );
+}
 
 export default SocialMediaButtonsContainer;
