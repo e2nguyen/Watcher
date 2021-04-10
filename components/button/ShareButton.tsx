@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './button';
   
-const ShareButton: React.FC = () => { 
+const ShareButton = (): JSX.Element => { 
   const onClick = () => {
     console.log("you are sharing something")
   }

@@ -9,27 +9,29 @@ interface Props {
   width: string;
 }
 
-const CustomDivComponent: React.FC<Props> = ({ 
+const CustomDiv = ({
   className, 
   children, 
   color,
   header,
   height,
   width
-}) => (
-  <>
-    <div className = {className}>
-        <h1>{header}</h1>
-      <div className = "body">{children}</div>
-    </div>
-    <style jsx>{`
+}: Props): JSX.Element => {
+  return (
+    <>
+      <div className = {className}>
+          <h1>{header}</h1>
+        <div className = "body">{children}</div>
+      </div>
+      <style jsx>{`
         .${className}{
           background-color: ${color};
           height: ${height};
           width: ${width}
         }
-    `}</style>
-  </>
-);
+      `}</style>
+    </>
+  )
+};
 
-export default CustomDivComponent;
+export default CustomDiv;

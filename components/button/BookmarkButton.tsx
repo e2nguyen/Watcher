@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './button';
 
-const BookmarkButton: React.FC = () => { 
+const BookmarkButton = (): JSX.Element => {
   const onClick = () => {
     console.log("you are bookmarking something")
   }

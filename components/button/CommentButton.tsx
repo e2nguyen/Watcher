@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from './button';
 
-const CommentButton: React.FC = () => {
+const CommentButton = (): JSX.Element => {
   const onClick = () => {
     console.log('commented')
   }
 
   return (
     <Button
-      backgroundURL='/pencil-comment.png'
       backgroundSize='18px'
+      backgroundURL='/pencil-comment.png'
       height="18px"
       onClick={onClick}
       width="18px"
