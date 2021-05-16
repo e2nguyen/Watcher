@@ -10,15 +10,6 @@ interface Props {
   src: string;
 }
 
-const AvatarStyling: React.FC<{className: string}> = ({className}) => (
-  <style jsx global>{`
-    .${className} {
-      border-radius: 50%;
-      object-fit: cover;
-    }
-  `}</style>
-)
-
 const Avatar = ({
     alt,
     children,
@@ -26,18 +17,18 @@ const Avatar = ({
     imageClassName,
     src
   }: Props): JSX.Element => {
+    const avatarStyling = 'rounded-full object-cover'
     const avatarWrapper = 'h-20 flex align-middle items-center'
     const userName = 'flex items-center h-50 m-0 pl-4 align-middle w-300'
     return (
       <div className={avatarWrapper}>
         <CustomImage 
           alt={alt}
-          className={imageClassName}
+          className={avatarStyling}
           height="50px"
           src={src}
           width="50px"
         >
-          <AvatarStyling className={imageClassName}/>
         </CustomImage>
           <p className={userName}>{children}</p>
       </div>
