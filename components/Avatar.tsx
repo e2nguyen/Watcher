@@ -30,7 +30,7 @@ const Avatar = ({
           width="50px"
         >
         </CustomImage>
-          <p className={userName}>{children}</p>
+        <p className={userName}>{children}</p>
       </div>
     );
 }
