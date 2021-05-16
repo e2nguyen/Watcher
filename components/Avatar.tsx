@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomImage from "components/CustomImage";
+import "tailwindcss/tailwind.css";
 
 interface Props {
   alt: string;
@@ -17,6 +18,7 @@ const AvatarStyling: React.FC<{className: string}> = ({className}) => (
     }
   `}</style>
 )
+//` <div className={`${className}`}>
 
 const Avatar = ({
     alt,
@@ -25,35 +27,30 @@ const Avatar = ({
     imageClassName,
     src
   }: Props): JSX.Element => {
+    const avatarWrapper = 'h-60 flex align-middle items-center'
     return (
-    <div className={`${className}`}>
-      <CustomImage 
-        alt={alt}
-        className={imageClassName}
-        height="50px"
-        src={src}
-        width="50px"
-      >
-        <AvatarStyling className={imageClassName}/>
-      </CustomImage>
-      {children}
-      <style jsx global>{`
-        .${className} {
-          height: 60px;
-          vertical-align: middle;
-          display: flex;
-          align-items: center;
-        }
-        p {
-          display: flex;
-          align-items: center;
-          height: 50px;
-          margin: 0;
-          padding-left: 20px;
-          vertical-align: middle;
-          width: 300px;
-        }
-      `}</style>
+      <div className={avatarWrapper}>
+        <CustomImage 
+          alt={alt}
+          className={imageClassName}
+          height="50px"
+          src={src}
+          width="50px"
+        >
+          <AvatarStyling className={imageClassName}/>
+        </CustomImage>
+        {children}
+        <style jsx global>{`
+          p {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            margin: 0;
+            padding-left: 20px;
+            vertical-align: middle;
+            width: 300px;
+          }
+        `}</style>
       </div>
     );
 }
