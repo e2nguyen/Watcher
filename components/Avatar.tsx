@@ -18,7 +18,6 @@ const AvatarStyling: React.FC<{className: string}> = ({className}) => (
     }
   `}</style>
 )
-//` <div className={`${className}`}>
 
 const Avatar = ({
     alt,
@@ -27,7 +26,8 @@ const Avatar = ({
     imageClassName,
     src
   }: Props): JSX.Element => {
-    const avatarWrapper = 'h-60 flex align-middle items-center'
+    const avatarWrapper = 'h-20 flex align-middle items-center'
+    const userName = 'flex items-center h-50 m-0 pl-4 align-middle w-300'
     return (
       <div className={avatarWrapper}>
         <CustomImage 
@@ -39,18 +39,7 @@ const Avatar = ({
         >
           <AvatarStyling className={imageClassName}/>
         </CustomImage>
-        {children}
-        <style jsx global>{`
-          p {
-            display: flex;
-            align-items: center;
-            height: 50px;
-            margin: 0;
-            padding-left: 20px;
-            vertical-align: middle;
-            width: 300px;
-          }
-        `}</style>
+          <p className={userName}>{children}</p>
       </div>
     );
 }
