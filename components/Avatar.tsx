@@ -26,8 +26,7 @@ const Avatar = ({
           height="50px"
           src={src}
           width="50px"
-        >
-        </CustomImage>
+        />
         <p className={userName}>{children}</p>
       </div>
     );
