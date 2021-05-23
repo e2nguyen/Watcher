@@ -13,7 +13,6 @@ const RedditPost = ({ children }: Props): JSX.Element=> {
       <Avatar
         alt="alt text for girl pin avatar"
         className="this-reddit-post-avatar-image"
-        imageClassName="this-avatar-class"
         src="/girl-pink.png"
       >
         <p>fdsfjas</p>

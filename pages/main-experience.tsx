@@ -16,7 +16,6 @@ function MainExperience() {
       <Avatar
         alt="alt text herefsafdsafas"
         className="avatarClassNameOne"
-        imageClassName="imageclass"
         src="/character-sprites-sample.png"
       >
         <p>avatar component 1</p>
