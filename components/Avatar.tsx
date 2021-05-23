@@ -6,7 +6,6 @@ interface Props {
   alt: string;
   children: React.ReactNode;
   className: string;
-  imageClassName: string;
   src: string;
 }
 
@@ -14,7 +13,6 @@ const Avatar = ({
     alt,
     children,
     className,
-    imageClassName,
     src
   }: Props): JSX.Element => {
     const avatarStyling = 'rounded-full object-cover'
@@ -28,8 +26,7 @@ const Avatar = ({
           height="50px"
           src={src}
           width="50px"
-        >
-        </CustomImage>
+        />
         <p className={userName}>{children}</p>
       </div>
     );
