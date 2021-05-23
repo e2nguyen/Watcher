@@ -10,7 +10,6 @@ interface Props {
 const FaceBookPost = ({ 
     children 
   }: Props): JSX.Element => {
-    const facebookStyling = ''
     return (
       <div className="facebook-post">
         <Avatar
