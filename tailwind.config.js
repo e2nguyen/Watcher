@@ -17,6 +17,12 @@ module.exports = {
       '50%': '50%',
       'size-18': '18px', // TODO: change px to rem
     },
+    height: {
+      'social-media-button-height': '18px',
+    },
+    width: {
+      'social-media-button-width': '18px',
+    }
   },
   variants: {
     extend: {},
