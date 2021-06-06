@@ -4,6 +4,7 @@ import React from "react";
 interface Props {
   backgroundSize: string;
   backgroundURL: string;
+  backgroundImage: string;
   children?: React.ReactNode;
   height: string;
   onClick: () => void;
@@ -12,16 +13,25 @@ interface Props {
 
 const Button = ({
   backgroundSize,
+  backgroundImage,
   backgroundURL, 
   children, 
   height,
   onClick, 
   width
 }: Props): JSX.Element => {
+  const buttonStyling = `
+    ${backgroundImage}
+    ${backgroundSize}
+    border-none	
+    h-${height}
+    h-${width}
+  `
+
   return (
     <span className="custom-button-container">
       <button 
-        className="custom-button" 
+        className={buttonStyling} 
         onClick={onClick}
       > 
         {children}
