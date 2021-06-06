@@ -8,11 +8,10 @@ const CommentButton = (): JSX.Element => {
 
   return (
     <Button
-      backgroundSize='18px'
-      backgroundURL='/pencil-comment.png'
-      height="18px"
+      backgroundImage="bg-pencil-comment"
+      height="social-media-button-height"
       onClick={onClick}
-      width="18px"
+      width="social-media-button-width"
     />
   )
 };

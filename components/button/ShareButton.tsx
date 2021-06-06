@@ -8,11 +8,10 @@ const ShareButton = (): JSX.Element => {
   
   return(
     <Button 
-      backgroundSize="18px"
-      backgroundURL="/plane-share.png"
-      height="18px"
+      backgroundImage="bg-plane-share"
+      height="social-media-button-height"
       onClick={onClick}
-      width="18px"
+      width="social-media-button-width"
     /> 
     )
   };
