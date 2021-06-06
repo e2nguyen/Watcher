@@ -2,7 +2,6 @@ import { jsx } from "@emotion/react";
 import React from "react";
 
 interface Props {
-  backgroundSize: string;
   backgroundImage: string;
   children?: React.ReactNode;
   height: string;
@@ -11,7 +10,6 @@ interface Props {
 }
 
 const Button = ({
-  backgroundSize,
   backgroundImage,
   children, 
   height,

@@ -14,8 +14,6 @@ module.exports = {
       'auto': 'auto',
       'cover': 'cover',
       'contain': 'contain',
-      '50%': '50%',
-      'size-18': '18px', // TODO: change px to rem
     },
     height: {
       'social-media-button-height': '18px',
