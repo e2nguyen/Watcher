@@ -20,7 +20,7 @@ const Button = ({
 }: Props): JSX.Element => {
   const buttonStyling = `
     ${backgroundImage}
-    ${backgroundSize}
+    bg-contain
     border-none	
     h-${height}
     w-${width}
