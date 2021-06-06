@@ -3,7 +3,6 @@ import React from "react";
 
 interface Props {
   backgroundSize: string;
-  backgroundURL: string;
   backgroundImage: string;
   children?: React.ReactNode;
   height: string;
@@ -14,7 +13,6 @@ interface Props {
 const Button = ({
   backgroundSize,
   backgroundImage,
-  backgroundURL, 
   children, 
   height,
   onClick, 
@@ -25,27 +23,17 @@ const Button = ({
     ${backgroundSize}
     border-none	
     h-${height}
-    h-${width}
+    w-${width}
   `
 
   return (
     <span className="custom-button-container">
-      <button 
-        className={buttonStyling} 
+      <button
+        className={buttonStyling}
         onClick={onClick}
       > 
         {children}
       </button>
-      <style jsx>{`
-        .custom-button {
-          background-color: transparent;
-          background-image: url(${backgroundURL});
-          background-size: ${backgroundSize};
-          border: none;
-          height: ${height};
-          width: ${width};
-        }
-      `}</style>
     </span>
   )
 }
