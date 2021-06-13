@@ -25,14 +25,12 @@ const Button = ({
   `
 
   return (
-    <span className="custom-button-container">
-      <button
-        className={buttonStyling}
-        onClick={onClick}
-      > 
-        {children}
-      </button>
-    </span>
+    <button
+      className={buttonStyling}
+      onClick={onClick}
+    > 
+      {children}
+    </button>
   )
 }
 
