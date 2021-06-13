@@ -7,20 +7,14 @@ import {
   } from './button';
   
 const SocialMediaButtonsContainer = (): JSX.Element => {
+  const socialMediaButtonsContainerSpanStyling = "mx-social-media-button-container-margin"
   return (
-  <>
-    <div className="social-media-buttons-container">
-      <CommentButton/>
-      <LikeButton/>
-      <ShareButton/>
-      <BookmarkButton/>
+    <div>
+      <span className={socialMediaButtonsContainerSpanStyling}><CommentButton/></span>
+      <span className={socialMediaButtonsContainerSpanStyling}><LikeButton/></span>
+      <span className={socialMediaButtonsContainerSpanStyling}><ShareButton/></span>
+      <span className={socialMediaButtonsContainerSpanStyling}><BookmarkButton/></span>
     </div>
-    <style jsx global>{`
-      .social-media-buttons-container span {
-        margin: 10px;
-      }
-    `}</style>
-  </>
   );
 }
 

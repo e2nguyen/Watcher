@@ -1,7 +1,6 @@
 import React from 'react';
 
 interface Props {
-  className: string;
   children: React.ReactNode;
   color: string;
   header: string;
@@ -10,26 +9,23 @@ interface Props {
 }
 
 const CustomDiv = ({
-  className, 
   children, 
   color,
   header,
   height,
   width
 }: Props): JSX.Element => {
+  const customDivStyling = `
+    ${color}
+    h-${height}
+    w-${width}
+  `
   return (
     <>
-      <div className = {className}>
-          <h1>{header}</h1>
-        <div className = "body">{children}</div>
+      <div className={customDivStyling}>
+        <h1>{header}</h1>
+        <div>{children}</div>
       </div>
-      <style jsx>{`
-        .${className}{
-          background-color: ${color};
-          height: ${height};
-          width: ${width}
-        }
-      `}</style>
     </>
   )
 };

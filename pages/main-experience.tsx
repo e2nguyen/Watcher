@@ -5,11 +5,10 @@ import CustomDiv from "components/CustomDiv";
 function MainExperience() {
   return ( <>
     <CustomDiv
-      className="sampleDiv"
-      color="green"
+      color="bg-pink-100"
       header="first div"
-      height="500px"
-      width="100%"
+      height="custom-div-height"
+      width="custom-div-width"
     >
       text above the Avatar here
       <br></br>
@@ -22,40 +21,35 @@ function MainExperience() {
       </Avatar>
       <Button 
         onClick={() => console.log("you clicked the cat!")}
-        backgroundSize="50px"
-        backgroundURL="/cat.png"
+        backgroundImage="bg-cat"
         height="50px"
         width="50px"
       />
     </CustomDiv>
     <CustomDiv
-      className="sampleDiv2"
-      color="pink"
+      color="bg-green-100"
       header="second div"
-      height="500px"
-      width="100%"
+      height="custom-div-height"
+      width="custom-div-width"
     >
       2nd exp
       <Button 
         onClick={() => console.log("you clicked the cat!")}
-        backgroundSize="50px"
-        backgroundURL = "/girl-black.png"
+        backgroundImage = "bg-girl-black"
         height="50px"
         width="50px"
       /> 
     </CustomDiv>
     <CustomDiv
-      className = "sampleDiv2"
-      color = "grey"
+      color = "bg-blue-100"
       header = "third div"
-      height = "500px"
-      width = "100%"
+      height = "custom-div-height"
+      width="custom-div-width"
     >
       3rd exp
       <Button
         onClick={() => console.log("you clicked the cat!")}
-        backgroundSize="50px"
-        backgroundURL = "/girl-pink.png"
+        backgroundImage = "bg-girl-pink"
         height="50px"
         width="50px"
       /> 
