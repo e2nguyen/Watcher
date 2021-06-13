@@ -20,6 +20,9 @@ module.exports = {
     },
     width: {
       'social-media-button-width': '18px',
+    },
+    spacing: {
+      'social-media-button-container-margin': '10px',
     }
   },
   variants: {
