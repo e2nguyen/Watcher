@@ -8,11 +8,10 @@ const BookmarkButton = (): JSX.Element => {
 
   return(
     <Button 
-      backgroundSize="18px"
-      backgroundURL="/bookmark.png"
-      height="18px"
+      backgroundImage="bg-bookmark"
+      height="social-media-button-height"
       onClick={onClick}
-      width="18px"
+      width="social-media-button-width"
     /> 
   )
 };

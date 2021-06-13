@@ -8,11 +8,10 @@ const LikeButton = (): JSX.Element => {
 
   return (
     <Button
-      backgroundSize="18px"
-      backgroundURL="/heart-icon.png"
-      height="18px"
+      backgroundImage="bg-heart-icon"
+      height="social-media-button-height"
       onClick={onClick}
-      width="18px"
+      width="social-media-button-width"
     />
   )
 };
