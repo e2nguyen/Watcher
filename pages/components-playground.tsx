@@ -32,7 +32,7 @@ function Playground() {
       <CommentButton/>
       <FaceBookPost
       >
-       <p> This is a facebook type post >:)</p>
+       <p> This is a facebook type post :)</p>
       </FaceBookPost>
       <CustomImage
         alt="bleh"
