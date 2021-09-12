@@ -1,5 +1,5 @@
 import React from 'react';
-import client from "./ApolloClient";
+import client from "../ApolloClient";
 import { ApolloProvider } from "@apollo/client";
 
 const ApolloWrapper = ({children}: {children: React.ReactNode}
