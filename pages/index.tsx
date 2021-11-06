@@ -5,8 +5,13 @@ import {
 import ApolloWrapper from "components/ApolloWrapper";
 
   const GET_GREETING = gql`
-    query {
-      greetings
+    query Greetings {
+      greetings {
+        data {
+          _id
+          message
+        }
+      }
     }
   `
 
@@ -17,7 +22,7 @@ const HomePage = (): JSX.Element => {
   
   return (
       <div>Helo world
-        {data?.greetings}
+        {JSON.stringify(data)}
       </div>
   )
 }
