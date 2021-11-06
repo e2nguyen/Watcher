@@ -21,8 +21,7 @@ const ApolloWrapper = ({children}: {children: React.ReactNode}
       <ApolloProvider client={client}>
         {children}
       </ApolloProvider>
-    )
-
-}
+    );
+};
 
 export default ApolloWrapper;
