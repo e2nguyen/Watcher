@@ -1,0 +1,8 @@
+type Greeting { 
+  message: String
+}
+
+type Query {
+  greetings: [Greeting!]
+}
+
