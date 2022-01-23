@@ -9,9 +9,9 @@ const BookmarkButton = (): JSX.Element => {
   return(
     <Button 
       backgroundImage="bg-bookmark"
-      height="social-media-button-height"
+      height="h-social-media-button-height"
       onClick={onClick}
-      width="social-media-button-width"
+      width="w-social-media-button-width"
     /> 
   )
 };

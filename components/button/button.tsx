@@ -1,4 +1,3 @@
-import { jsx } from "@emotion/react";
 import React from "react";
 
 interface Props {
@@ -20,8 +19,8 @@ const Button = ({
     ${backgroundImage}
     bg-contain
     border-none	
-    h-${height}
-    w-${width}
+    ${height}
+    ${width}
   `
 
   return (

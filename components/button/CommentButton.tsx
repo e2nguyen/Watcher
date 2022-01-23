@@ -9,9 +9,9 @@ const CommentButton = (): JSX.Element => {
   return (
     <Button
       backgroundImage="bg-pencil-comment"
-      height="social-media-button-height"
+      height="h-social-media-button-height"
       onClick={onClick}
-      width="social-media-button-width"
+      width="w-social-media-button-width"
     />
   )
 };

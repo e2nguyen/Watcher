@@ -20,6 +20,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
@@ -30,7 +31,7 @@
     "node_modules"
   ],
   "types": [
-    "node", 
+    "node",
     "react-emotion"
   ]
 }

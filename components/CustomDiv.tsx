@@ -17,8 +17,8 @@ const CustomDiv = ({
 }: Props): JSX.Element => {
   const customDivStyling = `
     ${color}
-    h-${height}
-    w-${width}
+    ${height}
+    ${width}
   `
   return (
     <>
