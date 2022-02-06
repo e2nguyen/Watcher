@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ['./pages/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './components/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./pages/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './components/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       backgroundImage: theme => ({
@@ -37,9 +36,6 @@ module.exports = {
       'social-media-button-width': '18px',
       'custom-div-width': '100%',
     },
-  },
-  variants: {
-    extend: {},
-  },
+  },  
   plugins: [],
 }

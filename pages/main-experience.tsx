@@ -7,8 +7,8 @@ function MainExperience() {
     <CustomDiv
       color="bg-pink-100"
       header="first div"
-      height="custom-div-height"
-      width="custom-div-width"
+      height="h-custom-div-height"
+      width="w-custom-div-width"
     >
       text above the Avatar here
       <br></br>
@@ -22,36 +22,36 @@ function MainExperience() {
       <Button 
         onClick={() => console.log("you clicked the cat!")}
         backgroundImage="bg-cat"
-        height="50px"
-        width="50px"
+        height="h-50"
+        width="w-50"
       />
     </CustomDiv>
     <CustomDiv
-      color="bg-green-100"
+      color="bg-emerald-100"
       header="second div"
-      height="custom-div-height"
-      width="custom-div-width"
+      height="h-custom-div-height"
+      width="w-custom-div-width"
     >
       2nd exp
       <Button 
         onClick={() => console.log("you clicked the cat!")}
         backgroundImage = "bg-girl-black"
-        height="50px"
-        width="50px"
+        height="h-50"
+        width="w-50"
       /> 
     </CustomDiv>
     <CustomDiv
       color = "bg-blue-100"
       header = "third div"
-      height = "custom-div-height"
-      width="custom-div-width"
+      height = "h-custom-div-height"
+      width="w-custom-div-width"
     >
       3rd exp
       <Button
         onClick={() => console.log("you clicked the cat!")}
         backgroundImage = "bg-girl-pink"
-        height="50px"
-        width="50px"
+        height="h-50"
+        width="w-50"
       /> 
     </CustomDiv>  
   </>)
