@@ -2,3 +2,6 @@
 .next
 /node_modules
 .vercel
+schema.gql
+typeDefs.js
+/server
